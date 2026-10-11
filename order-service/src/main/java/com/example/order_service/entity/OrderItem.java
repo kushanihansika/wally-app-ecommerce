@@ -1,9 +1,8 @@
 package com.example.order_service.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
+import lombok.*;
+
 import java.util.UUID;
 
 import java.math.BigDecimal;
@@ -12,6 +11,8 @@ import java.math.BigDecimal;
 @Table(name = "order_items")
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class OrderItem {
 
     @Id
